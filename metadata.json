@@ -1,0 +1,20 @@
+{
+  "name": "caius-prometheus",
+  "version": "0.2.0",
+  "author": "caius",
+  "summary": "Installs Prometheus.io under ubuntu",
+  "license": "Apache License Version 2.0",
+  "source": "git://github.com/caius/puppet-prometheus",
+  "project_page": "https://github.com/caius/puppet-prometheus",
+  "issues_url": "https://github.com/caius/puppet-prometheus/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu"
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "puppetlabs-concat"
+    }
+  ],
+}
