@@ -18,6 +18,12 @@ class prometheus::install {
   Apt::Key <| |> -> Apt::Source <| |>
   Apt::Source <| |> ~> Package <| |>
 
-  package { ['prometheus', 'node-exporter']: }
+  $prometheus_packages = [
+    'prometheus',
+    'node-exporter',
+    # 'alertmanager',
+    # 'pushgateway',
+  ]
+  package { $prometheus_packages: }
 
 }
